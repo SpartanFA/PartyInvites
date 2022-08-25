@@ -1,0 +1,23 @@
+﻿@model  PartyInvites2.Models.GuestResponse
+@{
+    ViewData["Title"] = "Thanks";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+</head>
+<body>
+    <p>
+        <h1>Thank you, @Model.Name</h1>
+        @if (true)
+        {
+            @:It is great that you are coming! The drinks are already in the fridge!
+        }
+    </p>
+    <p>Click <a asp-action="ListResponses">here</a> to see who is coming.</p>
+</body>
+</html>
